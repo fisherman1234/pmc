@@ -1,4 +1,6 @@
 Parkmycar::Application.routes.draw do
+  resources :sells
+
   resources :buys
 
   resources :users

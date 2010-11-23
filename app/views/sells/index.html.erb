@@ -1,0 +1,33 @@
+<h1>Listing sells</h1>
+
+<table>
+  <tr>
+    <th>Id user</th>
+    <th>Offer term</th>
+    <th>Min price</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Id transaction</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sells.each do |sell| %>
+  <tr>
+    <td><%= sell.id_user %></td>
+    <td><%= sell.offer_term %></td>
+    <td><%= sell.min_price %></td>
+    <td><%= sell.latitude %></td>
+    <td><%= sell.longitude %></td>
+    <td><%= sell.id_transaction %></td>
+    <td><%= link_to 'Show', sell %></td>
+    <td><%= link_to 'Edit', edit_sell_path(sell) %></td>
+    <td><%= link_to 'Destroy', sell, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sell', new_sell_path %>

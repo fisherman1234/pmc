@@ -1,0 +1,27 @@
+<h1>Listing transactions</h1>
+
+<table>
+  <tr>
+    <th>Id buyer</th>
+    <th>Id seller</th>
+    <th>Transaction price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @transactions.each do |transaction| %>
+  <tr>
+    <td><%= transaction.id_buyer %></td>
+    <td><%= transaction.id_seller %></td>
+    <td><%= transaction.transaction_price %></td>
+    <td><%= link_to 'Show', transaction %></td>
+    <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
+    <td><%= link_to 'Destroy', transaction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Transaction', new_transaction_path %>

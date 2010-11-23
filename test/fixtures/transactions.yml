@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_buyer: 1
+  id_seller: 1
+  transaction_price: 1.5
+
+two:
+  id_buyer: 1
+  id_seller: 1
+  transaction_price: 1.5

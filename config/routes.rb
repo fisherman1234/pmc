@@ -1,4 +1,14 @@
 Parkmycar::Application.routes.draw do
+  resources :users
+
+  resources :sells
+
+  resources :buys
+
+  resources :transactions
+
+  resources :vehicles
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

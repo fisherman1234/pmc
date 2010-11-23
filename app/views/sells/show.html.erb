@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @sell.user_id %>
+</p>
+
+<p>
+  <b>Offer term:</b>
+  <%= @sell.offer_term %>
+</p>
+
+<p>
+  <b>Min price:</b>
+  <%= @sell.min_price %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @sell.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @sell.longitude %>
+</p>
+
+<p>
+  <b>Open:</b>
+  <%= @sell.open %>
+</p>
+
+
+<%= link_to 'Edit', edit_sell_path(@sell) %> |
+<%= link_to 'Back', sells_path %>

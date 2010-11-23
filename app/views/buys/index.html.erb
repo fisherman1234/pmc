@@ -1,0 +1,31 @@
+<h1>Listing buys</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Max price</th>
+    <th>Open</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @buys.each do |buy| %>
+  <tr>
+    <td><%= buy.user_id %></td>
+    <td><%= buy.latitude %></td>
+    <td><%= buy.longitude %></td>
+    <td><%= buy.max_price %></td>
+    <td><%= buy.open %></td>
+    <td><%= link_to 'Show', buy %></td>
+    <td><%= link_to 'Edit', edit_buy_path(buy) %></td>
+    <td><%= link_to 'Destroy', buy, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Buy', new_buy_path %>

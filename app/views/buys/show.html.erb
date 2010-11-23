@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id user:</b>
+  <%= @buy.id_user %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @buy.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @buy.longitude %>
+</p>
+
+<p>
+  <b>Max price:</b>
+  <%= @buy.max_price %>
+</p>
+
+<p>
+  <b>Id transaction:</b>
+  <%= @buy.id_transaction %>
+</p>
+
+
+<%= link_to 'Edit', edit_buy_path(@buy) %> |
+<%= link_to 'Back', buys_path %>
